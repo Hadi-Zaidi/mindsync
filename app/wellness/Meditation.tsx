@@ -10,7 +10,6 @@ export default function Meditation() {
     // Step 1: State management for active tab
     const [activeTab, setActiveTab] = useState("styled-profile");
 
-    // Step 2: Function to handle tab change
     const handleTabChange = (tabId: string) => {
         setActiveTab(tabId);
     };
