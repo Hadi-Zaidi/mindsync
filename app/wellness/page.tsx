@@ -3,7 +3,7 @@ import { GiSandsOfTime } from "react-icons/gi";
 import { PiHeartbeatFill } from "react-icons/pi";
 import { MdCheckBox } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
-import Meditation from './Meditation';
+// import Meditation from './Meditation';
 import Masonary from './Masonary';
 
 const cardData = [
