@@ -11,7 +11,7 @@ export default function Masonary() {
     const [activeTab, setActiveTab] = useState("styled-profile");
 
     // Step 2: Function to handle tab change
-    const handleTabChange = (tabId) => {
+    const handleTabChange = (tabId: string) => {
         setActiveTab(tabId);
     };
     return (

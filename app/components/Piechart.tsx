@@ -43,14 +43,14 @@ export default function Piechart() {
                 },
                 yaxis: {
                     labels: {
-                        formatter: function (value) {
+                        formatter: function (value: number) {
                             return value + "%";
                         },
                     },
                 },
                 xaxis: {
                     labels: {
-                        formatter: function (value) {
+                        formatter: function (value: number) {
                             return value + "%";
                         },
                     },
