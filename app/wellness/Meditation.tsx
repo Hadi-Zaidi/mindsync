@@ -32,7 +32,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Nomad&apos;sMountain</p>
+                                    <p className="text-sm">Nomad's Mountain</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -86,7 +86,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Wizard&apos;s Tower</p>
+                                    <p className="text-sm">Wizard's Tower</p>
                                 </div>
                             </div>
 
@@ -102,7 +102,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Davinci&apos;s Workshop</p>
+                                    <p className="text-sm">Davinci's Workshop</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -161,7 +161,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Wizard&apos;s Tower</p>
+                                    <p className="text-sm">Wizard's Tower</p>
                                 </div>
                             </div>
 
@@ -177,7 +177,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Nomad&apos;sMountain</p>
+                                    <p className="text-sm">Nomad's Mountain</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -206,7 +206,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Davinci&apos;s Workshop</p>
+                                    <p className="text-sm">Davinci's Workshop</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -238,7 +238,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Nomad&apos;sMountain</p>
+                                    <p className="text-sm">Nomad's Mountain</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -267,7 +267,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Davinci&apos;s Workshop</p>
+                                    <p className="text-sm">Davinci's Workshop</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
@@ -321,7 +321,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Wizard&apos;s Tower</p>
+                                    <p className="text-sm">Wizard's Tower</p>
                                 </div>
                             </div>
 
@@ -367,7 +367,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Wizard&apos;s Tower</p>
+                                    <p className="text-sm">Wizard's Tower</p>
                                 </div>
                             </div>
 
@@ -409,7 +409,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Wizard&apos;s Tower</p>
+                                    <p className="text-sm">Wizard's Tower</p>
                                 </div>
                             </div>
 
@@ -425,7 +425,7 @@ export default function Meditation() {
                                 />
                                 {/* Overlay text */}
                                 <div className="absolute z-10">
-                                    <p className="text-sm">Davinci&apos;s Workshop</p>
+                                    <p className="text-sm">Davinci's Workshop</p>
                                 </div>
                             </div>
                             <div className='relative w-full h-[300px] rounded-xl z-0 p-4'>
