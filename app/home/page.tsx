@@ -42,6 +42,7 @@ export default function page() {
                         <div className='ml-auto'>
                             <div className="flex text-2xl">
                                 <p className="">You're on a roll! </p>
+                                {/* <p className="">You&apos;re on a roll! </p> */}
                                 <span className="text-yellow-500 mx-1"><IoIosStar /></span>
                             </div>
                             <div className="header-subtext">

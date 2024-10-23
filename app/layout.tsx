@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import Fonts, { fontVariables } from './components/fonts';
+import { fontVariables } from './components/fonts';
 
 
 export const metadata: Metadata = {

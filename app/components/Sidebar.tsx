@@ -15,6 +15,8 @@ import Logo from '@/app/images/logo.png';
 
 export default function Sidebar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true); // Sidebar toggle state
+    const [hoveredIndex, setHoveredIndex] = useState(-1); // State to manage hover effect
+
     const pathname = usePathname(); // Get current pathname
 
     const toggleSidebar = () => {
@@ -113,19 +115,18 @@ export default function Sidebar() {
             <div className="nav-links my-5">
                 {links.map((link, index) => {
                     const isActive = pathname === link.path; // Check if link is active
-                    const [isHovered, setIsHovered] = useState(false); // State to manage hover effect
 
                     return (
                         <Link key={index} href={link.path}>
                             <div
                                 className={`link flex text-sm items-center cursor-pointer space-x-4 py-2 rounded-lg transition-all duration-300 
                                 ${isSidebarOpen ? 'pl-6' : 'justify-center'} 
-                                ${isActive || isHovered ? `shadow-lg ${link.shadowColor}` : ''}`}
-                                onMouseEnter={() => setIsHovered(true)} // Set hover state to true on mouse enter
-                                onMouseLeave={() => setIsHovered(false)} // Set hover state to false on mouse leave
+                                ${isActive || hoveredIndex === index ? `shadow-lg ${link.shadowColor}` : ''}`}
+                                onMouseEnter={() => setHoveredIndex(index)} // Set hovered index on mouse enter
+                                onMouseLeave={() => setHoveredIndex(-1)} // Reset hovered index on mouse leave
                             >
-                                <span className={`${isActive || isHovered ? link.activeColor : link.color} text-lg`}>
-                                    {isActive || isHovered ? <link.iconActive /> : <link.icon />}
+                                <span className={`${isActive || hoveredIndex === index ? link.activeColor : link.color} text-lg`}>
+                                    {isActive || hoveredIndex === index ? <link.iconActive /> : <link.icon />}
                                 </span>
                                 {isSidebarOpen && (
                                     <span className={`${isActive ? link.activeColor : 'text-slate-300'} flex-grow`}>

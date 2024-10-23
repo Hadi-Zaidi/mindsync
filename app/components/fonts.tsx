@@ -1,7 +1,5 @@
 import React from 'react'
-import localFont from "next/font/local";
 import { Fira_Sans } from '@next/font/google';
-// import { Fira_Sans } from '';
 
 
 

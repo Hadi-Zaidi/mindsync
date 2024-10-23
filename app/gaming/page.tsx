@@ -179,7 +179,7 @@ const historyData = [
 
 ]
 
-export default function page() {
+export default function Page() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
