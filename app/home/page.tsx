@@ -10,7 +10,7 @@ export default function page() {
     return (
         <div className="min-h-screen bg-zinc-900 relative ">
             {/* Glow effect container */}
-            <div className="absolute inset-0 z-0 flex justify-start items-center pointer-events-none">
+            <div className="fixed inset-0 z-0 flex justify-start items-center pointer-events-none">
                 <div className="w-80 h-80 md:w-96 md:h-96 bg-indigo-400 opacity-75 rounded-full blur-3xl"></div>
             </div>
             <div className='container mx-auto relative z-10'> {/* Added relative z-10 */}

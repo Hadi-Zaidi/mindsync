@@ -99,17 +99,20 @@ export default function Sidebar() {
                 <MdKeyboardDoubleArrowLeft className={`${isSidebarOpen ? '' : 'rotate-180'}`} />
             </div>
 
-            <div className="logo py-3 flex justify-center items-center border-b border-slate-400">
-                <Image
-                    src={Logo}
-                    width={40}
-                    height={10}
-                    alt="Logo of the author"
-                />
-                {isSidebarOpen && (
-                    <p className="text-white text-lg font-semibold ml-4">MindSync</p>
-                )}
-            </div>
+            <Link href="/home">
+                <div className="logo py-3 flex justify-center items-center border-b border-slate-400">
+                    <Image
+                        src={Logo}
+                        width={40}
+                        height={10}
+                        alt="Logo of the author"
+                    />
+                    {isSidebarOpen && (
+                        <p className="text-white text-lg font-semibold ml-4">MindSync</p>
+                    )}
+                </div>
+            </Link>
+
 
             {/* Mapped Links */}
             <div className="nav-links my-5">
