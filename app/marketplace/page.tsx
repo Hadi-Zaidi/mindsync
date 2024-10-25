@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import Soon from '@/app/images/coming-soon.png'
 import img1 from '@/app/images/1.jpg'
 import img2 from '@/app/images/2.jpg'
 import img3 from '@/app/images/3.jpg'
