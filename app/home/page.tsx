@@ -52,9 +52,9 @@ export default function page() {
                     </div>
                     <div className="card">
                         <div className="block max-w-lg p-6 bg-black border border-gray-700 rounded-lg shadow">
-                            <div className="grid grid-cols-3">
+                            <div className="grid grid-cols sm:grid-cols-3">
                                 <div className="col-span-2 flex">
-                                    <div className="icon text-3xl">
+                                    <div className="icon text-lg sm:text-3xl">
                                         <HiMiniSquare3Stack3D />
                                     </div>
                                     <div className="text block mx-3">
@@ -64,8 +64,8 @@ export default function page() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-span-1 button ml-auto">
-                                    <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-1 mb-2">Resume</button>
+                                <div className="col-span-1 button ml-5 sm:ml-auto">
+                                    <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-1 my-2">Resume</button>
                                 </div>
                             </div>
                         </div>
