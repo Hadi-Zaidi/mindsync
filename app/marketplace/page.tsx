@@ -122,6 +122,7 @@ export default function page() {
                                                     />
                                                     <div className="m-2 absolute inset-0 flex items-end z-10">
                                                         <h1 className="text-lg">{item.imgHead}</h1>
+                                                        <h1>Fahad</h1>
                                                     </div>
                                                 </div>
                                             </Link>
