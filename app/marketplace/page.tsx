@@ -111,8 +111,8 @@ export default function page() {
                                 <div className="overflow-x-auto scrollbar-h-2 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-900">
                                     <div className="flex space-x-4">
                                         {card.images.map((item) => (
-                                            <Link href={item.link}>
-                                                <div key={item.id} className=" rounded-xl min-w-[100px] sm:min-w-[300px] h-48 bg-gray-300 flex-shrink-0 relative z-0 hover:min-w-[150px] sm:hover:min-w-[350px] duration-300">
+                                            <Link key={item.id} href={item.link}>
+                                                <div className=" rounded-xl min-w-[100px] sm:min-w-[300px] h-48 bg-gray-300 flex-shrink-0 relative z-0 hover:min-w-[150px] sm:hover:min-w-[350px] duration-300">
                                                     <Image
                                                         src={item.img}
                                                         alt={`Image ${item.id + 1}`}
