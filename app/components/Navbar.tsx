@@ -5,6 +5,7 @@ import User from "@/app/images/me.jpg"
 import { FaRegEnvelope } from "react-icons/fa";
 import { GoBell } from "react-icons/go";
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 export default function Navbar() {
@@ -24,16 +25,25 @@ export default function Navbar() {
 
                     <div className="ml-auto flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <div className="icons flex mx-3">
-                            <div className="icon ml-3">
-                                <FaRegEnvelope />
+                            <div className="icon ml-1">
+                                <Link href="#">
+                                    <button className="rounded-full border border-transparent hover:bg-slate-700 hover:border-slate-100 hover:shadow-sm duration-200 p-1">
+                                        <FaRegEnvelope />
+                                    </button>
+                                </Link>
                             </div>
-                            <div className="icon ml-3">
-                                <GoBell />
+                            <div className="icon ml-1">
+                                <Link href="#">
+                                    <button className="relative rounded-full border border-transparent hover:bg-slate-700 hover:border-slate-100 hover:shadow-sm duration-200 p-1">
+                                        <GoBell />
+                                        <div className="absolute inline-flex items-center justify-center w-2 h-2 text-xs font-bold text-white bg-red-600 rounded-full -top-1 -end-"></div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <button
                             type="button"
-                            className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300"
+                            className="flex text-sm border border-transparent bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 hover:border-slate-100 duration-200"
                             id="user-menu-button"
                             aria-expanded={isDropdownOpen ? 'true' : 'false'}
                             onClick={toggleDropdown} // Toggle dropdown on button click
