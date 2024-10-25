@@ -3,7 +3,7 @@ import { FaChartLine, FaUsers } from "react-icons/fa6";
 import { IoIosTrendingUp, IoIosTrendingDown } from "react-icons/io";
 import { IoCube } from "react-icons/io5";
 import { CiTimer } from "react-icons/ci";
-// import Piechart from '../components/Piechart';
+import Piechart from '../components/Piechart';
 import Image from 'next/image';
 import Coin from '@/app/images/coin.png'
 
@@ -156,7 +156,7 @@ export default function page() {
                         <div className="block w-full p-6 bg-black border border-gray-700 rounded-lg shadow h-96">
                             <p className="text-lg font-semibold">Token Balance</p>
                             <div className="piachart">
-                                {/* <Piechart /> */}
+                                <Piechart />
                             </div>
                         </div>
                     </div>

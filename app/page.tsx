@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     // Automatically redirect to /dashboard
-    router.push('/marketplace');
+    router.push('/home');
   }, [router]);
 
   return null;

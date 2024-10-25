@@ -1,77 +1,48 @@
-'use client'
+'use client';
 
-import { useEffect } from 'react';
-import ApexCharts from 'apexcharts';
+import dynamic from 'next/dynamic';
+import { ApexOptions } from 'apexcharts'; // Import the ApexOptions type
 
-export default function Piechart() {
-    useEffect(() => {
+// Dynamically import ApexCharts with no SSR
+const ApexCharts = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-
-        const options = {
-            series: [50, 30, 20],
-            colors: ["#fcba03", "#03fc6b", "#036ffc"],
-            chart: {
-                height: 250,
-                width: "100%",
-                type: "pie",
-            },
-            stroke: {
-                colors: ["black"],
-                lineCap: "",
-            },
-            plotOptions: {
-                pie: {
-                    labels: {
-                        show: true,
-                    },
-                    size: "100%",
-                    dataLabels: {
-                        offset: 0
-                    }
-                },
-            },
-            labels: ["Gaming", "Wellness", "Training"],
-            dataLabels: {
+export default function PieChart() {
+    // Define the options as ApexOptions
+    const options: ApexOptions = {
+        chart: {
+            height: 250,
+            type: 'pie', // Ensure 'pie' is a valid type
+            fontFamily: 'Inter, sans-serif',
+            dropShadow: {
                 enabled: false,
-                style: {
-                    fontFamily: "Inter, sans-serif",
+            },
+            toolbar: {
+                show: false,
+            },
+        },
+        labels: ['Gaming', 'Wellness', 'Training'], // Define labels for the pie chart
+        colors: ['#fcba03', '#03fc6b', '#036ffc'], // Set colors for the pie slices
+        stroke: {
+            colors: ['black'],
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    offset: 0,
                 },
             },
-            legend: {
-                position: "bottom",
-                fontFamily: "Inter, sans-serif",
-            },
-            yaxis: {
-                labels: {
-                    formatter: function (value: number) {
-                        return value + "%";
-                    },
-                },
-            },
-            xaxis: {
-                labels: {
-                    formatter: function (value: number) {
-                        return value + "%";
-                    },
-                },
-                axisTicks: {
-                    show: false,
-                },
-                axisBorder: {
-                    show: false,
-                },
-            },
-        };
+        },
+        legend: {
+            position: 'bottom',
+            fontFamily: 'Inter, sans-serif',
+        },
+    };
 
-        const chart = new ApexCharts(document.querySelector('#piechart'), options);
-        chart.render();
-
-        return () => {
-            chart.destroy();
-        };
-    }, []);
+    const series = [50, 30, 20]; // Data for the pie chart
 
     return (
-        <div className="h-36" id="piechart"></div>
+        <div className="h-36">
+            <ApexCharts options={options} series={series} type="pie" height={250} />
+        </div>
     );
 }

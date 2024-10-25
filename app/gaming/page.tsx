@@ -8,7 +8,7 @@ import Dice from '@/app/images/dice.png'
 import Mahjong from '@/app/images/mahjong.png'
 import Bg from '@/app/images/fortnite-cover.jpg'
 import Gamer from '@/app/images/flyinggamer.png'
-// import RadialChart from '../components/RadialChart'
+import RadialChart from '../components/RadialChart'
 import Girl from '@/app/images/girl2.png'
 
 const gamesData = [
@@ -249,7 +249,7 @@ export default function Page() {
                             <div className="block w-full p-6 bg-black border border-gray-700 rounded-lg shadow h-full">
                                 <p className="font-semibold">Taken Reward Progress</p>
                                 <div className="radialChart">
-                                    {/* <RadialChart /> */}
+                                    <RadialChart />
                                 </div>
                             </div>
                         </div>

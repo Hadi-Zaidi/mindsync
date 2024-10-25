@@ -1,7 +1,7 @@
 import React from 'react';
-// import OverviewChart from '../components/OverviewChart';
+import OverviewChart from '../components/OverviewChart';
 import YouTubeEmbed from './Video'; // Ensure the correct path to your component
-// import RadialChart from '../components/RadialChart';
+import RadialChart from '../components/RadialChart';
 
 const logsData = [
     {
@@ -109,7 +109,7 @@ export default function Page() {
                         <div className="max-w-lg p-6 bg-black border border-gray-700 rounded-lg shadow h-full flex flex-col">
                             <p className="font-semibold">Training Chart</p>
                             <div className="chart flex-grow my-3"> {/* Use flex-grow to allow this div to take available space */}
-                                {/* <OverviewChart /> */}
+                                <OverviewChart />
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ export default function Page() {
                         <div className="block max-w-lg p-6 bg-black border border-gray-700 rounded-lg shadow">
                             <p className="font-semibold">Tokens Mounted</p>
                             <div className="tokens my-3">
-                                {/* <RadialChart /> */}
+                                <RadialChart />
                             </div>
                         </div>
                     </div>
