@@ -11,6 +11,19 @@ import Gamer from '@/app/images/flyinggamer.png'
 import RadialChart from '../components/RadialChart'
 import Girl from '@/app/images/girl2.png'
 
+import { useEffect } from 'react';
+
+const MyComponent = () => {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    return isClient ? <div>{window.innerWidth}</div> : null;
+};
+
+
 
 
 const gamesData = [
