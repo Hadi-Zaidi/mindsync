@@ -11,9 +11,7 @@ import Gamer from '@/app/images/flyinggamer.png'
 import RadialChart from '../components/RadialChart'
 import Girl from '@/app/images/girl2.png'
 
-import dynamic from 'next/dynamic';
 
-const MyComponent = dynamic(() => import('@/app/gaming/page'), { ssr: false });
 
 const gamesData = [
     {
@@ -194,9 +192,7 @@ export default function Page() {
 
         <div className="min-h-screen bg-zinc-900 relative">
             {/* Glow effect container */}
-            <div>
-                <MyComponent /> {/* Now only loads on the client side */}
-            </div>
+
 
             <div className="fixed inset-0 z-0 flex justify-start items-center pointer-events-none">
                 <div className="w-80 h-80 md:w-96 md:h-96 bg-yellow-600 opacity-75 rounded-full blur-3xl"></div>
