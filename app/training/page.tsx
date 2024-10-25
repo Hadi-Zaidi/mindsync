@@ -1,7 +1,7 @@
 import React from 'react';
-import OverviewChart from '../components/OverviewChart';
+// import OverviewChart from '../components/OverviewChart';
 import YouTubeEmbed from './Video'; // Ensure the correct path to your component
-import RadialChart from '../components/RadialChart';
+// import RadialChart from '../components/RadialChart';
 
 const logsData = [
     {

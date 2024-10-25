@@ -3,7 +3,7 @@ import { FaChartLine, FaUsers } from "react-icons/fa6";
 import { IoIosTrendingUp, IoIosTrendingDown } from "react-icons/io";
 import { IoCube } from "react-icons/io5";
 import { CiTimer } from "react-icons/ci";
-import Piechart from '../components/Piechart';
+// import Piechart from '../components/Piechart';
 import Image from 'next/image';
 import Coin from '@/app/images/coin.png'
 

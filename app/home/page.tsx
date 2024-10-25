@@ -4,7 +4,7 @@ import User from "@/app/images/me.jpg";
 import { FaShield } from "react-icons/fa6";
 import { IoIosStar } from "react-icons/io";
 import { HiMiniSquare3Stack3D } from "react-icons/hi2";
-import OverviewChart from '../components/OverviewChart';
+// import OverviewChart from '../components/OverviewChart';
 
 export default function page() {
     return (

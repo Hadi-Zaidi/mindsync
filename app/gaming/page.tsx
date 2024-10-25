@@ -8,7 +8,7 @@ import Dice from '@/app/images/dice.png'
 import Mahjong from '@/app/images/mahjong.png'
 import Bg from '@/app/images/fortnite-cover.jpg'
 import Gamer from '@/app/images/flyinggamer.png'
-import RadialChart from '../components/RadialChart'
+// import RadialChart from '../components/RadialChart'
 import Girl from '@/app/images/girl2.png'
 
 const gamesData = [
