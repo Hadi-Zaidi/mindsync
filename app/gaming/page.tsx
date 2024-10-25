@@ -249,7 +249,7 @@ export default function Page() {
                             <div className="block w-full p-6 bg-black border border-gray-700 rounded-lg shadow h-full">
                                 <p className="font-semibold">Taken Reward Progress</p>
                                 <div className="radialChart">
-                                    <RadialChart />
+                                    {/* <RadialChart /> */}
                                 </div>
                             </div>
                         </div>

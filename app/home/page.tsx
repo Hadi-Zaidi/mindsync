@@ -75,7 +75,7 @@ export default function page() {
                         <div className="block min-w-full p-6 bg-black border border-gray-700 rounded-lg shadow">
                             <p className="text-sm font-semibold">Overview</p>
                             <div className="chart max-w-lg m-auto">
-                                <OverviewChart />
+                                {/* <OverviewChart /> */}
                             </div>
                         </div>
                     </div>
